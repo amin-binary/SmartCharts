@@ -378,6 +378,7 @@ class ChartState {
         return true;
     }
 
+    // TODO: use ignore_export form CanvasMarker when exporting
     saveDrawings() {
         if (!this.chartId) return;
         const obj = this.stxx.exportDrawings();

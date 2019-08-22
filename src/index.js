@@ -17,6 +17,7 @@ import ChartTitle from './components/ChartTitle.jsx';
 import AssetInformation from './components/AssetInformation.jsx';
 import Marker from './components/Marker.jsx';
 import FastMarker from './components/FastMarker.jsx';
+import CanvasMarker from './components/CanvasMarker.jsx';
 import CurrentSpot from './components/CurrentSpot.jsx';
 import { createObjectFromLocalStorage } from './utils';
 import { logEvent, LogCategories, LogActions } from './utils/ga';
@@ -65,6 +66,7 @@ export default {
     DrawTools,
     Marker, // this is depricated in favor of FastMarker
     FastMarker,
+    CanvasMarker, // limited support for svg path, but it's faster than FastMakrer!
     PendingPromise,
     setSmartChartsPublicPath,
     Share,
